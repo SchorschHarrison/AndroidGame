@@ -376,6 +376,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: c72381a7ee4607c49b7b4b3e191df7bb,
+        type: 3}
+      propertyPath: m_TagString
+      value: ActualObstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: c72381a7ee4607c49b7b4b3e191df7bb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: -113181020801827196, guid: c72381a7ee4607c49b7b4b3e191df7bb,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

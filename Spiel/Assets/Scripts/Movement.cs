@@ -46,6 +46,7 @@ public class Movement : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         jumping = false;
         velocity = new Vector3(0, 0, 0);
+        //Physics.IgnoreLayerCollision(9, 10);
     }
 
     // Update is called once per frame
@@ -102,5 +103,13 @@ public class Movement : MonoBehaviour
     public void setTarget(Transform target)
     {
         this.targetBlock =  target;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.layer == 10)
+        {
+            Physics.IgnoreCollision(GetComponent<BoxCollider>(), collision.collider);
+        }
     }
 }

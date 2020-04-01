@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Obstacle
   - GameEventSystem
+  - ActualObstacle
   layers:
   - Default
   - TransparentFX
